@@ -10,7 +10,7 @@ rcParams['figure.figsize']=20,10
 from sklearn.preprocessing import MinMaxScaler
 scaler=MinMaxScaler(feature_range=(0,1))
 
-df=pd.read_csv("NSE-TATA.csv")
+df=pd.read_csv("COL_data.csv")
 df.head()
 
 df["Date"]=pd.to_datetime(df.Date,format="%Y-%m-%d")
