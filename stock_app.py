@@ -16,7 +16,7 @@ scaler=MinMaxScaler(feature_range=(0,1))
 
 
 
-df_nse = pd.read_csv("./NSE-TATA.csv")
+df_nse = pd.read_csv("./COL_data.csv")
 
 df_nse["Date"]=pd.to_datetime(df_nse.Date,format="%Y-%m-%d")
 df_nse.index=df_nse['Date']
